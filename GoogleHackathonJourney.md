@@ -31,6 +31,12 @@ To ensure NewsPrism is production-ready and scalable, we turned to **Google Clou
 -   **Cloud Run**: The entire application is containerized and deployed on Google Cloud Run. This allows us to scale automatically based on traffic while keeping latency low for our global users.
 -   **Security & Environment Management**: Using Google Cloud’s secret management, we securely handle API keys for Gemini and other services, ensuring that our integration is both powerful and safe.
 
+### Deployment Automation
+We have automated the deployment process using **Infrastructure-as-Code (IaC)** principles:
+-   **Dockerfile**: A multi-stage build process to create a lightweight, production-ready container image.
+-   **Cloud Run YAML**: A declarative configuration for managing the service's resources, environment variables, and ingress.
+-   **Deployment Script**: A `deploy.sh` script that integrates with **Google Cloud Build** to automate the CI/CD pipeline, from source code to a live URL.
+
 ### Building the Experience: React & Tailwind CSS
 On the frontend, we wanted a "Technical Dashboard" aesthetic—precise, clean, and information-dense.
 -   **Tailwind CSS**: Used for the sleek, dark-mode interface and responsive layouts.
