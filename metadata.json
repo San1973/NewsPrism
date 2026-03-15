@@ -1,0 +1,5 @@
+{
+  "name": "Prism News",
+  "description": "A multi-agent news interpreter that extracts stories and runs them through three parallel analysts and one final synthesizer.",
+  "requestFramePermissions": ["microphone"]
+}
